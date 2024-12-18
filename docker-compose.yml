@@ -1,0 +1,15 @@
+services:
+#  middleware:
+#    build: .
+#    ports:
+#      - "8080:8080"
+#    env_file:
+#      - .env
+  db:
+    image: postgres:17
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=Snakebit24!
+      - POSTGRES_USER=agsmuser
+      - POSTGRES_DB=agsm
